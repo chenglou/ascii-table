@@ -1,5 +1,5 @@
 {
-  "name": "ocaml-ascii-table",
+  "name": "OcamlAsciiTable",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -15,5 +15,16 @@
   "bugs": {
     "url": "https://github.com/chenglou/ascii-table/issues"
   },
-  "homepage": "https://github.com/chenglou/ascii-table#readme"
+  "homepage": "https://github.com/chenglou/ascii-table#readme",
+  "dependencies": {
+    "CommonML": "git://github.com/jordwalke/CommonML.git",
+    "OcamlPcre": "git://github.com/bsansouci/commonml-ocaml-pcre.git"
+  },
+  "CommonML": {
+    "exports": [
+      "AsciiTable"
+    ],
+    "compileFlags": [],
+    "linkFlags": ["-custom", "node_modules/OcamlPcre/pcre_stubs.o", "-cclib -lpcre"]
+  }
 }
