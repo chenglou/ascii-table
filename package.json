@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/chenglou/ascii-table#readme",
   "dependencies": {
-    "CommonML": "git://github.com/jordwalke/CommonML.git",
+    "CommonML": "git://github.com/bsansouci/CommonML.git",
     "OcamlPcre": "git://github.com/bsansouci/commonml-ocaml-pcre.git"
   },
   "CommonML": {
@@ -25,6 +25,6 @@
       "AsciiTable"
     ],
     "compileFlags": [],
-    "linkFlags": ["-custom", "node_modules/OcamlPcre/pcre_stubs.o", "-cclib -lpcre"]
+    "linkFlags": []
   }
 }
