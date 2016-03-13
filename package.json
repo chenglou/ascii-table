@@ -23,8 +23,6 @@
   "CommonML": {
     "exports": [
       "AsciiTable"
-    ],
-    "compileFlags": [],
-    "linkFlags": []
+    ]
   }
 }
